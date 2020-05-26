@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'page.apps.PageConfig',  #'page', 라고 앱 이름만 쳐도 됨
+
 ]
 
 MIDDLEWARE = [
@@ -47,7 +49,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'page.apps.PageConfig',  #'page', 라고 앱 이름만 쳐도 됨
 ]
 
 ROOT_URLCONF = 'config.urls'
