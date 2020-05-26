@@ -6,6 +6,15 @@
     <title>words count project</title>
 </head>
 <body>
-    장고가 돌아간다 이야
+    <h3>문장을 입력하고 "결과 확인하기"버튼을 눌러주세요</h3>
+    <br>
+    <form action="{% url 'result' %}">
+        <textarea name="fulltext" id="" cols="40" rows="10"></textarea>
+        <br>
+        <input type="submit" value="결과 확인하기">
+        <br>
+        <a href="{% url 'about' %}">프로젝트 소개</a>
+
+    </form>
 </body>
 </html>
